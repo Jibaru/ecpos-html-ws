@@ -1,0 +1,16 @@
+version: "3"
+services:
+  cool-ecpos-printer:
+    image: php:7.4-cli
+    volumes:
+      - ./:/var/www
+    working_dir: /var/www
+    command: php -S 0.0.0.0:8090 index.php
+    ports:
+      - "${PORT}:8090"
+    networks:
+      - idbi_backend
+
+networks:
+  idbi_backend:
+    external: true
