@@ -24,3 +24,5 @@ Nota: En caso de haber cambiado el `PORT` en el archivo `.env` reemplazar el pue
 
 Para ver la información, basta con entrar a: `http://localhost:8090` para ver las impresiones.
 En caso de querer limpiar, borrar el contenido del archivo `print-content.html`.
+
+Para limpiar la información, basta con entrar a: `http://localhost:8090?clear`.
